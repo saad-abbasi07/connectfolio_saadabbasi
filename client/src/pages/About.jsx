@@ -39,14 +39,21 @@ export default function About() {
             View My GitHub
           </a>
 
-          <a
-            href="/resume.pdf"
+          {/* <a
+            href="../assets/myResume/My-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 transition text-center"
           >
             Download Resume
-          </a>
+          </a> */}
+          <a
+  href="/myResume/My-Resume.pdf"
+  download="Saad_Abbasi_Resume.pdf"
+  className="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 transition text-center"
+>
+  Download Resume
+</a>
         </div>
       </div>
     </section>
