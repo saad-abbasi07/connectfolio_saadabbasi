@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import myImage from "../assets/images/14gy40.jpg";
+import myImage from "../assets/images/main-image/saad-abbasi.jpg";
 
 export default function Home() {
   useEffect(() => {

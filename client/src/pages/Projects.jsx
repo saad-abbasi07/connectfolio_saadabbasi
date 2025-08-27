@@ -1,11 +1,17 @@
 import React from "react";
-import connecthubImage from "../assets/images/connecthub-preview.png";
-import portfolioImage from "../assets/images/portfilioImage.png";
-import enquiryImage from "../assets/images/enquiry-form.png";
-import passwordImage from "../assets/images/password-generator.png";
-import weatherImage from "../assets/images/weather-app.png";
-import chatImage from "../assets/images/chat-app.png";
-import { FaGithub } from "react-icons/fa"; // 👈 GitHub icon
+import connecthubImage from "../assets/images/projects_images/connecthub-preview.png";
+import portfolioImage from "../assets/images/projects_images/portfilioImage.png";
+import enquiryImage from "../assets/images/projects_images/enquiry-form.png";
+import passwordImage from "../assets/images/projects_images/password-generator.png";
+import weatherImage from "../assets/images/projects_images/weather-app.png";
+import chatImage from "../assets/images/projects_images/chat-app.png";
+import ecommerceImage from "../assets/images/projects_images/e-store.png";
+import foodieImage from "../assets/images/projects_images/foodieOrder.png";
+import mernChatImage from "../assets/images/projects_images/Mern_live_chat.png";
+import universityPortalImage from "../assets/images/projects_images/university-portal.png";
+import shopifyThemeImage from "../assets/images/projects_images/shopifyTheme.png";
+import fbMiniAppImage from "../assets/images/projects_images/fb-pic.png";
+import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
@@ -56,6 +62,54 @@ const projects = [
     github: "https://github.com/saad-abbasi07/chat-app",
     image: chatImage,
   },
+  {
+    title: "Ecommerce Estore NextJS",
+    description:
+      "A modern, responsive e-commerce storefront built with Next.js, React, and Tailwind CSS. Features product listings, categories, and a dynamic product details page.",
+    technologies: ["Next.js", "React", "Tailwind"],
+    github: "https://github.com/saad-abbasi07/ecommerce-estore-nextjs",
+    image: ecommerceImage,
+  },
+  {
+    title: "FoodieOrder",
+    description:
+      "A React + Tailwind food delivery UI with restaurant listings, menu pages, cart, login, and signup, built with React Router and context state.",
+    technologies: ["React", "Tailwind", "React Router"],
+    github: "https://github.com/saad-abbasi07/FoodieOrder",
+    image: foodieImage,
+  },
+  {
+    title: "MERN Chat App",
+    description:
+      "A real-time chat application built with React, Node.js, Express, MongoDB, and Socket.io.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io"],
+    github: "https://github.com/saad-abbasi07/mern-chat-app",
+    image: mernChatImage,
+  },
+  {
+    title: "University Portal",
+    description:
+      "A secure PHP/MySQL portal for students, faculty, and admins with role-specific dashboards, Bootstrap UI, and session authentication.",
+    technologies: ["PHP", "MySQL", "Bootstrap"],
+    github: "https://github.com/saad-abbasi07/university-portal",
+    image: universityPortalImage,
+  },
+  {
+    title: "Shopify Theme",
+    description:
+      "Milano Shopify Theme - Full-stack React/Node solution with responsive UI, auth system, and demo showcase. Built with Tailwind CSS, Express, MongoDB.",
+    technologies: ["React", "Node.js", "Express", "Tailwind", "MongoDB"],
+    github: "https://github.com/saad-abbasi07/shopify-theme",
+    image: shopifyThemeImage,
+  },
+  {
+    title: "fb-mini-app",
+    description:
+      "A mini Facebook-like app built with Next.js and TypeScript.",
+    technologies: ["Next.js", "TypeScript"],
+    github: "https://github.com/saad-abbasi07/fb-mini-app",
+    image: fbMiniAppImage,
+  }
 ];
 
 export default function Projects() {
