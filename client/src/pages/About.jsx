@@ -9,7 +9,7 @@ export default function About() {
         </h2>
 
         <p className="text-gray-300 leading-7 mb-4" data-aos="fade-up">
-          I'm <strong>Saad Abbasi</strong>, a full-stack web developer with expertise in building responsive, scalable, and dynamic websites and web apps using <strong>React, Node.js, MongoDB, PHP, MySQL, HTML, CSS, JavaScript</strong>, and <strong>jQuery</strong>.
+          I'm <strong>Saad Abbasi</strong>, a full-stack web developer with expertise in building responsive, scalable, and dynamic websites and web apps using <strong>React, Next.js, Node.js, MongoDB, PHP, MySQL, HTML, CSS, JavaScript, TypeScript</strong>, and <strong>jQuery</strong>.
         </p>
 
         <p className="text-gray-300 leading-7 mb-4" data-aos="fade-up" data-aos-delay="100">
@@ -39,21 +39,20 @@ export default function About() {
             View My GitHub
           </a>
 
-          {/* <a
-            href="../assets/myResume/My-Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a
+            href="/myResume/Saad-Abbasi-Resume.pdf"
+            download="Saad_Abbasi_Resume.pdf"
             className="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 transition text-center"
           >
             Download Resume
-          </a> */}
+          </a>
           <a
-  href="/myResume/My-Resume.pdf"
-  download="Saad_Abbasi_Resume.pdf"
-  className="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 transition text-center"
->
-  Download Resume
-</a>
+            href="/certificates/Certification_Sololearn.jpg"
+            download="Certification_Sololearn.jpg"
+            className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition text-center"
+          >
+            Download Certificate
+          </a>
         </div>
       </div>
     </section>
