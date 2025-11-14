@@ -12,6 +12,7 @@ import mernChatImage from "../assets/images/projects_images/Mern_live_chat.png";
 import universityPortalImage from "../assets/images/projects_images/university-portal.png";
 import shopifyThemeImage from "../assets/images/projects_images/shopifyTheme.png";
 import fbMiniAppImage from "../assets/images/projects_images/fb-pic.png";
+import starterWebImage from "../assets/images/projects_images/starter-web.png"; // add an image for this project
 import loanApprovalImage from "../assets/images/projects_images/loan-approval.png";
 import spamShieldImage from "../assets/images/projects_images/spamshield.png";
 import linearRegressionImage from "../assets/images/projects_images/linearRegressionImage.png";
@@ -20,55 +21,47 @@ const webProjects = [
   {
     title: "ConnectHub",
     description:
-      "A full-stack social collaboration platform where users can share posts, interact in real-time, and manage profiles. Built with the MERN stack and styled using Tailwind CSS.",
+      "Full-stack social collaboration platform for sharing posts, chatting in real-time, and managing profiles. I implemented real-time messaging and profile management using MERN stack and Tailwind CSS.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
     github: "https://github.com/saad-abbasi07/ConnectHub",
     image: connecthubImage,
   },
   {
+    title: "Shopify Theme",
+    description:
+      "Milano Shopify Theme - Full-stack React/Node solution with responsive UI and demo showcase. I built authentication, responsive layouts, and demo card features using Tailwind CSS and MongoDB.",
+    technologies: ["React", "Node.js", "Express", "Tailwind", "MongoDB"],
+    github: "https://github.com/saad-abbasi07/shopify-theme",
+    image: shopifyThemeImage,
+  },
+  {
+    title: "React Starter Web",
+    description:
+      "A lightweight starter template for React projects. Includes basic folder structure, pre-configured routing, reusable components, clean UI, and ready-to-deploy setup. Perfect for bootstrapping new React projects quickly.",
+    technologies: ["React", "Vite", "Tailwind", "React Router"],
+    github: "https://github.com/saad-abbasi07/react-starter-web",
+    image: starterWebImage,
+  },
+  {
     title: "My Portfolio",
     description:
-      "A personal portfolio designed with a modern, clean UI using Vite and Tailwind CSS. Fully responsive and performance-optimized.",
-    technologies: ["React", "Vite", "Tailwind", "Node.js", "Express"],
+      "Modern personal portfolio built with Vite and Tailwind CSS. I handled responsive design, project showcase, and performance optimizations.",
+    technologies: ["React", "Vite", "Tailwind"],
     github: "https://github.com/saad-abbasi07/connectfolio",
     image: portfolioImage,
   },
   {
-    title: "Enquiry Form App",
+    title: "MERN Chat App",
     description:
-      "A client-side enquiry form with dynamic table display, insert/update functionality, and backend data storage using MongoDB.",
-    technologies: ["React", "Axios", "Node.js", "MongoDB", "Flowbite"],
-    github: "https://github.com/saad-abbasi07/userEnquiry",
-    image: enquiryImage,
-  },
-  {
-    title: "Strong Password Generator",
-    description:
-      "A React-based tool to generate strong 20-character passwords including uppercase, lowercase, numbers, and special characters. Includes copy-to-clipboard functionality.",
-    technologies: ["React", "Tailwind"],
-    github: "https://github.com/saad-abbasi07/password-generator-react",
-    image: passwordImage,
-  },
-  {
-    title: "Weather App",
-    description:
-      "Search for any city or country and get live current weather updates including temperature, humidity, and conditions.",
-    technologies: ["React", "Weather API", "Axios", "Tailwind"],
-    github: "https://github.com/saad-abbasi07/weather-app-react",
-    image: weatherImage,
-  },
-  {
-    title: "Live Chat App",
-    description:
-      "A real-time chat application using React, WebSocket/Firebase. Users can send and receive messages live.",
-    technologies: ["React", "WebSocket", "Firebase", "Tailwind"],
-    github: "https://github.com/saad-abbasi07/chat-app",
-    image: chatImage,
+      "Real-time chat application built with React, Node.js, Express, MongoDB, and Socket.io. I implemented socket-based messaging and multi-room chat support.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io"],
+    github: "https://github.com/saad-abbasi07/mern-chat-app",
+    image: mernChatImage,
   },
   {
     title: "Ecommerce Estore NextJS",
     description:
-      "A modern, responsive e-commerce storefront built with Next.js, React, and Tailwind CSS. Features product listings, categories, and a dynamic product details page.",
+      "Responsive e-commerce storefront built with Next.js and Tailwind. I implemented dynamic product pages, category filters, and cart functionality.",
     technologies: ["Next.js", "React", "Tailwind"],
     github: "https://github.com/saad-abbasi07/ecommerce-estore-nextjs",
     image: ecommerceImage,
@@ -76,58 +69,74 @@ const webProjects = [
   {
     title: "FoodieOrder",
     description:
-      "A React + Tailwind food delivery UI with restaurant listings, menu pages, cart, login, and signup, built with React Router and context state.",
+      "React + Tailwind food delivery UI with restaurant listings, menus, cart, and authentication. I built context-based state management and routing system.",
     technologies: ["React", "Tailwind", "React Router"],
     github: "https://github.com/saad-abbasi07/FoodieOrder",
     image: foodieImage,
   },
   {
-    title: "MERN Chat App",
+    title: "Enquiry Form App",
     description:
-      "A real-time chat application built with React, Node.js, Express, MongoDB, and Socket.io.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io"],
-    github: "https://github.com/saad-abbasi07/mern-chat-app",
-    image: mernChatImage,
+      "Dynamic enquiry form with insert/update table functionality. I integrated backend storage using MongoDB and built interactive table features.",
+    technologies: ["React", "Axios", "Node.js", "MongoDB", "Flowbite"],
+    github: "https://github.com/saad-abbasi07/userEnquiry",
+    image: enquiryImage,
+  },
+  {
+    title: "Weather App",
+    description:
+      "Live weather updates for any city or country using React and Weather API. I implemented search functionality and responsive UI components.",
+    technologies: ["React", "Weather API", "Axios", "Tailwind"],
+    github: "https://github.com/saad-abbasi07/weather-app-react",
+    image: weatherImage,
+  },
+  {
+    title: "Live Chat App",
+    description:
+      "Real-time messaging app using React, Firebase, and WebSocket. I implemented message streaming and live notifications.",
+    technologies: ["React", "WebSocket", "Firebase", "Tailwind"],
+    github: "https://github.com/saad-abbasi07/chat-app",
+    image: chatImage,
+  },
+  {
+    title: "Strong Password Generator",
+    description:
+      "Tool to generate strong 20-character passwords with copy-to-clipboard. Built UI with React and styled with Tailwind CSS.",
+    technologies: ["React", "Tailwind"],
+    github: "https://github.com/saad-abbasi07/password-generator-react",
+    image: passwordImage,
   },
   {
     title: "University Portal",
     description:
-      "A secure PHP/MySQL portal for students, faculty, and admins with role-specific dashboards, Bootstrap UI, and session authentication.",
+      "Secure PHP/MySQL portal with role-specific dashboards. I implemented session-based authentication and Bootstrap UI components.",
     technologies: ["PHP", "MySQL", "Bootstrap"],
     github: "https://github.com/saad-abbasi07/university-portal",
     image: universityPortalImage,
   },
   {
-    title: "Shopify Theme",
-    description:
-      "Milano Shopify Theme - Full-stack React/Node solution with responsive UI, auth system, and demo showcase. Built with Tailwind CSS, Express, MongoDB.",
-    technologies: ["React", "Node.js", "Express", "Tailwind", "MongoDB"],
-    github: "https://github.com/saad-abbasi07/shopify-theme",
-    image: shopifyThemeImage,
-  },
-  {
     title: "fb-mini-app",
     description:
-      "A mini Facebook-like app built with Next.js and TypeScript.",
+      "Mini Facebook-like app built with Next.js and TypeScript. I developed UI components and navigation using Next.js.",
     technologies: ["Next.js", "TypeScript"],
     github: "https://github.com/saad-abbasi07/fb-mini-app",
     image: fbMiniAppImage,
-  }
+  },
 ];
 
 const mlProjects = [
   {
     title: "Loan Approval ML Model",
     description:
-      "This project predicts whether a loan application will be approved by analyzing applicant data. Includes confusion matrix, feature importance chart, and ROC curve for clear model insights.",
+      "Predicts loan approval based on applicant data. I implemented data preprocessing, model training, and visualizations like confusion matrix and ROC curve using Python and scikit-learn.",
     technologies: ["Python", "scikit-learn", "Pandas", "Matplotlib", "Seaborn"],
     github: "https://github.com/saad-abbasi07/loan-approval-ml-model",
     image: loanApprovalImage,
   },
   {
-    title: "SpamShield-ML: Spam Detection System",
+    title: "SpamShield-ML",
     description:
-      "A machine learning project to classify text messages as spam or ham using Python and NLP. TF-IDF vectorization, Multinomial Naive Bayes classifier, and visual insights with Seaborn and WordCloud.",
+      "Spam detection system classifying messages as spam or ham. I built TF-IDF vectorization, trained a Multinomial Naive Bayes model, and visualized insights with Seaborn and WordCloud.",
     technologies: ["Python", "NLP", "scikit-learn", "Seaborn", "WordCloud", "TF-IDF"],
     github: "https://github.com/saad-abbasi07/SpamShield-ML",
     image: spamShieldImage,
@@ -135,11 +144,11 @@ const mlProjects = [
   {
     title: "Linear Regression: Student Score Prediction",
     description:
-      "Built a Linear Regression model to predict student exam scores based on study hours, attendance, and previous performance. Visualized predicted vs actual results using Matplotlib and Scikit-learn.",
+      "Predicts student exam scores based on study hours and attendance. I trained a Linear Regression model, visualized predicted vs actual results, and analyzed feature impact.",
     technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "scikit-learn"],
     github: "https://github.com/saad-abbasi07/student-performance-prediction",
     image: linearRegressionImage,
-  }
+  },
 ];
 
 export default function Projects() {
@@ -147,12 +156,13 @@ export default function Projects() {
     projectsArray.map((project, index) => (
       <div
         key={index}
-        className="bg-neutral-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition flex flex-col h-full"
+        className="bg-neutral-800 rounded-xl shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col h-full"
       >
         {project.image && (
           <img
             src={project.image}
             alt={project.title}
+            loading="lazy"
             className="rounded mb-4 object-cover h-48 w-full"
           />
         )}
@@ -172,7 +182,7 @@ export default function Projects() {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-auto inline-flex items-center gap-2 text-sm text-purple-400 hover:text-white transition"
+          className="mt-auto inline-flex items-center gap-2 text-sm text-purple-400 hover:text-white hover:bg-purple-700 px-3 py-1 rounded transition"
         >
           <FaGithub className="text-lg" />
           <span>View on GitHub</span>
@@ -181,20 +191,24 @@ export default function Projects() {
     ));
 
   return (
-    <section className="pt-10 pb-20 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold mb-2 text-center text-gray-900">Web Development Projects</h2>
+    <section className="pt-10 pb-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 className="text-3xl font-bold mb-2 text-center text-gray-900">
+        Web Development Projects
+      </h2>
       <p className="text-center text-gray-600 mb-12">
         Showcase of responsive and interactive web applications built using modern technologies.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {renderProjects(webProjects)}
       </div>
 
-      <h2 className="text-3xl font-bold mb-2 mt-20 text-center text-gray-900">Machine Learning Projects</h2>
+      <h2 className="text-3xl font-bold mb-2 mt-20 text-center text-gray-900">
+        Machine Learning Projects
+      </h2>
       <p className="text-center text-gray-600 mb-12">
         Hands-on ML projects demonstrating data analysis, predictive modeling, and AI techniques.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {renderProjects(mlProjects)}
       </div>
     </section>

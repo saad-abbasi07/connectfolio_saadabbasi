@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import myImage from "../assets/images/main-image/saad-abbasi_1.jpg";
+import Services from "../components/Services";
 
 export default function Home() {
   useEffect(() => {
@@ -10,8 +11,10 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="bg-neutral-900 text-white min-h-screen w-full px-6 py-20 flex flex-col justify-center overflow-x-hidden">
-      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    <section className="bg-neutral-900 text-white w-full overflow-x-hidden">
+      {/* Hero Section */}
+      <div className="min-h-screen px-6 py-16 sm:py-24 md:py-32 flex flex-col justify-center">
+        <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
 
         <div
           className="flex-1 text-center md:text-left space-y-6"
@@ -26,7 +29,7 @@ export default function Home() {
             I build responsive digital products and use data to create smart solutions.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 w-full max-w-xs mx-auto md:max-w-none">
+          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 w-full max-w-xs sm:max-w-md mx-auto md:mx-0">
             <Link
               to="/projects"
               className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 text-center"
@@ -46,7 +49,7 @@ export default function Home() {
           className="flex-1 flex justify-center"
           data-aos="fade-left"
         >
-          <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-purple-400 shadow-xl">
+          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-purple-400 shadow-xl">
             <img
               src={myImage}
               alt="Saad Abbasi"
@@ -55,7 +58,11 @@ export default function Home() {
           </div>
         </div>
 
+        </div>
       </div>
+      
+      {/* Services Section */}
+      <Services />
     </section>
   );
 }
